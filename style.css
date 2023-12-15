@@ -38,10 +38,59 @@
 
 .header {
     display: grid;
-    background-color: rgb(245, 245, 245);
-    grid-column: 2;
-    grid-row: 1;
+    padding: 20px 50px;
+    font-size: 1.2em;
+    font-weight: 800;
+    background-color: rgb(255, 255, 255);
+    grid-template-rows: 1fr 1fr;
 }
+
+.header .top {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.header .bottom {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#search-box {
+    height: 35px;
+    font-size: 1.1em;
+    width: 50%;
+    outline: none;
+    border: none;
+    background-color: rgb(220, 220, 220);
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.msg-and-name {
+    margin-right: auto;
+}
+
+.msg-and-name p:nth-child(2) {
+    font-size: 1.4em;
+}
+
+.header-btns button {
+    padding: 10px;
+    text-align: center;
+    width: 80px;
+    font-size: 0.8em;
+    font-weight: 900;
+    color: white;
+    border: none;
+    margin-left: 20px;
+    background-color: rgb(95, 95, 242);
+    border-radius: 25px;
+}
+
+
 
 .main {
     display: grid;
